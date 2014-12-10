@@ -51,7 +51,7 @@ class ProblemsSpec extends FlatSpec with Matchers {
       List((4, 'a), 'b, (2, 'c), (2, 'a), 'd, (4, 'e))
   }
 
-  "P12" should "decode" in {
+  "P12" should "Duplicate the elements of a list." in {
     Problems.decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))) shouldEqual
       List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
   }
